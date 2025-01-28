@@ -123,6 +123,31 @@ section {
   margin-bottom: 10px;
 }
 
+/* Contact Section Fix */
+form {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+form input, form textarea, form button {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.social-links {
+  margin-top: 20px;
+}
+
+.social-links a {
+  color: #8e735b;
+  margin: 0 10px;
+  font-size: 1.5rem;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
   .skills-grid {
