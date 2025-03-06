@@ -259,41 +259,11 @@ nav ul li a:hover {
   text-align: center;
 }
 
-.contact h2 {
-  font-family: 'Playfair Display', serif;
-  font-size: 2.5rem;
-  margin-bottom: 2rem;
-}
-
-form {
-  max-width: 600px;
-  margin: 0 auto;
-}
-
-form input,
-form textarea {
-  width: 100%;
-  padding: 1rem;
-  margin: 0.5rem 0;
-  border: none;
-  border-radius: 5px;
-  font-family: 'Roboto', sans-serif;
-  font-size: 1rem;
-}
-
-form button {
-  background: #ff6f61;
+.contact {
+  padding: 6rem 2rem; /* You could reduce to 4rem if it feels too tall now */
+  background: #1a2a44;
   color: #fff;
-  padding: 1rem 2rem;
-  border: none;
-  border-radius: 5px;
-  font-weight: 700;
-  cursor: pointer;
-  transition: background 0.3s ease;
-}
-
-form button:hover {
-  background: #e65b50;
+  text-align: center;
 }
 
 .social-links {
