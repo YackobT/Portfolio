@@ -204,9 +204,11 @@ nav ul li a:hover {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2rem;
+  animation: fadeIn 1s ease-in;
 }
 
 .project {
+  position: relative;
   background: #f9f9f9;
   border-radius: 10px;
   overflow: hidden;
@@ -218,10 +220,55 @@ nav ul li a:hover {
   transform: translateY(-10px);
 }
 
-.project img {
+.project-image {
+  position: relative;
+}
+
+.project-image img {
   width: 100%;
   height: 200px;
   object-fit: cover;
+  display: block;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(26, 42, 68, 0.8); /* Matches your navy theme */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.project:hover .overlay {
+  opacity: 1;
+}
+
+.overlay h3 {
+  color: #fff;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.view-details {
+  color: #ff6f61;
+  text-decoration: none;
+  font-weight: 700;
+  padding: 0.5rem 1rem;
+  border: 2px solid #ff6f61;
+  border-radius: 5px;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.view-details:hover {
+  background: #ff6f61;
+  color: #fff;
 }
 
 .project-content {
@@ -249,6 +296,33 @@ nav ul li a:hover {
 
 .project-content ul li {
   margin-bottom: 0.5rem;
+}
+
+.skill-tags {
+  margin-top: 1rem;
+}
+
+.tag {
+  display: inline-block;
+  background: #ff6f61;
+  color: #fff;
+  padding: 0.3rem 0.8rem;
+  border-radius: 15px;
+  font-size: 0.8rem;
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /* Contact Section */
